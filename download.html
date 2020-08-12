@@ -4,17 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>叁拾直播</title>
+
+
+<style>
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imageView {
+        width: 100px;
+        height: 100px;
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+    .downloadView {
+        margin-top: 20px;
+        height: 30px;
+    }
+
+    .button {
+        width: 100px;
+    }
+</style>
+
 </head>
 <body>
+    <div class="imageView">
+        <img class="image" src="./512.png" alt="">
+    </div>
     <h1>欢迎下载叁拾直播App</h1>
-    <div>
+    <div class="downloadView">
         <a href="itms-services://?action=download-manifest&url=https://github.com/CYC666/thirtyapp/raw/master/manifest.plist">
-            <button>iOS版本</button>
+            <button class="button">iOS版本</button>
         </a>
     </div>
-    <div>
+    <div class="downloadView">
         <a href="https://github.com/CYC666/thirtyapp/raw/master/thirtyinline.apk">
-            <button>Android版本</button>
+            <button class="button">Android版本</button>
         </a>
     </div>
 </body>
